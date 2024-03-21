@@ -1,7 +1,8 @@
 pipeline {
     agent any
-    environment {
-              APP_NAME = "register-app-pipeline"
+    tools {
+        jdk 'Java17'
+        maven 'Maven3'
     }
 
     stages {
